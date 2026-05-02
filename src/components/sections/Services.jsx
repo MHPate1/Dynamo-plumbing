@@ -1,47 +1,56 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Link, Element } from 'react-scroll';
-import thermostatImg from '../../assets/thermostat.jpg';
-import baxiImg from '../../assets/baxi.png';
-import centralHeatingImg from '../../assets/ventralheating.png';
-import underfloorImg from '../../assets/underfloorheating.png';
+import thermostatImg from '../../assets/thermostat.jpg?w=662&format=webp&imagetools';
+import baxiImg from '../../assets/baxi.png?w=600&format=webp&imagetools';
+import centralHeatingImg from '../../assets/ventralheating.png?w=600&format=webp&imagetools';
+import underfloorImg from '../../assets/underfloorheating.png?w=600&format=webp&imagetools';
+
+const GAS_PHOTO = 'https://images.unsplash.com/photo-1616587226960-4a03badbe8bf';
+const PLUMBING_PHOTO = 'https://images.unsplash.com/photo-1585704032915-c3400ca199e7';
 
 const services = [
   {
-    title: 'BOILER INSTALL & REPAIR',
+    title: 'BOILER INSTALL, SERVICE & REPAIR',
     body: 'Professional boiler installation and servicing, ensuring your home stays warm, efficient, and safe all year round.',
     cta: 'GET BOILER HELP',
     image: baxiImg,
+    unsplash: null,
   },
   {
     title: 'LANDLORD GAS SAFETY CHECK / CP12',
     body: 'Gas safety checks you can trust – helping homeowners and landlords keep their properties and appliances safe and working as they should.',
     cta: 'GET GAS HELP',
-    image: 'https://images.unsplash.com/photo-1616587226960-4a03badbe8bf?w=600&q=80',
+    image: null,
+    unsplash: GAS_PHOTO,
   },
   {
     title: '24/7 EMERGENCY PLUMBING',
     body: "Plumbing problems big or small, we're here to help. Whether it's a burst pipe or a simple repair, our team is available 24/7.",
     cta: 'GET PLUMBING HELP',
-    image: 'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600&q=80',
+    image: null,
+    unsplash: PLUMBING_PHOTO,
   },
   {
     title: 'CENTRAL HEATING INSTALLATION',
     body: 'Looking to install new radiators or upgrade your existing ones? Our expert heating engineers will take care of everything.',
     cta: 'GET HEATING HELP',
     image: centralHeatingImg,
+    unsplash: null,
   },
   {
     title: 'NEST & HIVE THERMOSTAT',
     body: 'We provide expert thermostat installations, set up to suit your home and lifestyle for maximum comfort and energy savings.',
     cta: 'GET THERMOSTAT HELP',
     image: thermostatImg,
+    unsplash: null,
   },
   {
     title: 'UNDERFLOOR HEATING INSTALLATION',
     body: 'Upgrade your comfort with reliable underfloor heating installation, designed to keep your home cosy all year round.',
     cta: 'GET HEATING HELP',
     image: underfloorImg,
+    unsplash: null,
   },
 ];
 
@@ -57,6 +66,34 @@ const cardVariant = {
     transition: { duration: 0.5, ease: 'easeOut' },
   },
 };
+
+function ServiceImage({ service }) {
+  if (service.unsplash) {
+    const base = service.unsplash;
+    return (
+      <img
+        src={`${base}?w=600&q=75&fm=webp`}
+        srcSet={`${base}?w=400&q=75&fm=webp 400w, ${base}?w=600&q=75&fm=webp 600w, ${base}?w=800&q=75&fm=webp 800w`}
+        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px"
+        alt={service.title}
+        loading="lazy"
+        width="600"
+        height="192"
+        className="h-48 w-full object-cover"
+      />
+    );
+  }
+  return (
+    <img
+      src={service.image}
+      alt={service.title}
+      loading="lazy"
+      width="600"
+      height="192"
+      className="h-48 w-full object-cover"
+    />
+  );
+}
 
 export default function Services() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -86,14 +123,7 @@ export default function Services() {
           >
             {services.map((service, idx) => (
               <motion.div key={idx} variants={cardVariant} className="service-card flex flex-col">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  loading="lazy"
-                  width={600}
-                  height={192}
-                  className="h-48 w-full object-cover"
-                />
+                <ServiceImage service={service} />
                 <div className="p-6 flex flex-col flex-1">
                   <h3 className="font-heading text-xl font-bold text-dark mb-2">{service.title}</h3>
                   <p className="font-body text-sm text-muted leading-relaxed flex-1">{service.body}</p>

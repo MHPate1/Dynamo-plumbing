@@ -3,6 +3,8 @@ import { useInView } from 'react-intersection-observer';
 import { Element } from 'react-scroll';
 import { CONTACT } from '../../constants/contact';
 
+const CONTACT_PHOTO = 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1';
+
 const ctaButtons = [
   {
     label: 'CALL NOW',
@@ -54,13 +56,20 @@ export default function Contact() {
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6 }}
               className="relative text-white p-8 md:p-12 flex flex-col justify-center overflow-hidden"
-              style={{
-                backgroundImage:
-                  'url(https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&q=80)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-              }}
             >
+              {/* Background photo as real img for browser optimisation */}
+              <img
+                src={`${CONTACT_PHOTO}?w=900&q=75&fm=webp`}
+                srcSet={`${CONTACT_PHOTO}?w=400&q=75&fm=webp 400w, ${CONTACT_PHOTO}?w=900&q=75&fm=webp 900w`}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                alt=""
+                aria-hidden="true"
+                loading="eager"
+                fetchpriority="high"
+                width="900"
+                height="628"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-dark/75" />
               <div className="relative z-10">
                 <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4">GET IN TOUCH</h2>

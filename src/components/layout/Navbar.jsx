@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { motion, AnimatePresence } from 'framer-motion';
-import logoImg from '../../assets/dynamo-plumbing.jpeg';
+import logoImg from '../../assets/dynamo-plumbing.jpeg?w=212&format=webp&imagetools';
 
 const navLinks = [
   { name: 'BOILER', to: 'services' },
@@ -28,8 +28,8 @@ export default function Navbar() {
           <img
             src={logoImg}
             alt="Dynomo Plumbing & Heating Services"
-            width="200"
-            height="48"
+            width="212"
+            height="70"
             className="h-10 md:h-12 w-auto object-contain"
             fetchpriority="high"
           />

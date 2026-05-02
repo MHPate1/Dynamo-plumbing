@@ -3,13 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Element } from 'react-scroll';
 
-import vaillantImg   from '../../assets/vaillant.png';
-import cityGuildsImg from '../../assets/cityandguilds.png';
-import baxiCertImg   from '../../assets/baxi-cert.png';
-import alphaImg      from '../../assets/alpha.png';
-import glowwormImg   from '../../assets/glowworm.png';
-import idealImg      from '../../assets/idealboilers.png';
-import worcesterImg  from '../../assets/worcester-logo.png';
+import vaillantImg   from '../../assets/vaillant.png?w=160&format=webp&imagetools';
+import cityGuildsImg from '../../assets/cityandguilds.png?w=160&format=webp&imagetools';
+import baxiCertImg   from '../../assets/baxi-cert.png?w=160&format=webp&imagetools';
+import alphaImg      from '../../assets/alpha.png?w=160&format=webp&imagetools';
+import glowwormImg   from '../../assets/glowworm.png?w=160&format=webp&imagetools';
+import idealImg      from '../../assets/idealboilers.png?w=160&format=webp&imagetools';
+import worcesterImg  from '../../assets/worcester-logo.png?w=160&format=webp&imagetools';
 
 const certs = [
   { name: 'Vaillant',        sub: 'Advance Installer',    image: vaillantImg },
