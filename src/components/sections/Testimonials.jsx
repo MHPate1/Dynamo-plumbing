@@ -4,25 +4,32 @@ import { Element } from 'react-scroll';
 
 const testimonials = [
   {
-    title: 'New gas boiler installation',
-    body: "Engineer arrived exactly on time, professional and tidy. Couldn't be happier with the service.",
-    author: 'Sarah M.',
+    title: 'Excellent service from start to finish',
+    body: 'Spoke to Siraj — he was friendly, arranged to visit the property within a few hours, and sorted everything to a high standard. I would not hesitate to request his services again.',
+    author: 'Harry Featherstone',
     location: 'Bolton',
-    date: 'March 2025',
+    date: '9 months ago',
   },
   {
-    title: 'Emergency call out',
-    body: 'Called at 11pm with no heating. Engineer arrived within the hour. Absolute lifesaver.',
-    author: 'James T.',
+    title: 'Worcester Bosch boiler replacement',
+    body: 'Engineer came when he said he would and was polite and very friendly. He explained what needed doing and how much it would cost. Price was very competitive compared to other quotes I had received. A pleasure to have in the house.',
+    author: 'Ilyas Dhan',
     location: 'Bolton',
-    date: 'January 2025',
+    date: '5 years ago',
   },
   {
-    title: 'Boiler replacement',
-    body: 'The installation was carried out efficiently, on time, and the engineer explained everything clearly.',
-    author: 'Donald W.',
+    title: 'Central heating repair',
+    body: 'Rang Siraj when I had a problem with the central heating, he sorted it out over the phone and didn\'t charge me. Then booked a basic service — professional, explained everything he was doing. Would definitely recommend.',
+    author: 'Shoaib B',
     location: 'Bolton',
-    date: 'February 2025',
+    date: '3 years ago',
+  },
+  {
+    title: 'New boiler fitted quickly and cleanly',
+    body: 'Boiler broke down Wednesday, Dynomo came out Thursday and had a new boiler fitted Monday lunchtime. Siraj came out at 7am to suit us and even came back at 9pm to show us how to use it. House was left clean and tidy.',
+    author: 'Dean Whittle',
+    location: 'Bolton',
+    date: '5 years ago',
   },
 ];
 
@@ -59,7 +66,7 @@ export default function Testimonials() {
             variants={container}
             initial="initial"
             animate={inView ? 'animate' : 'initial'}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
+            className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12"
           >
             {testimonials.map((t, idx) => (
               <motion.div key={idx} variants={cardVariant} className="bg-offwhite rounded-xl p-6 flex flex-col">

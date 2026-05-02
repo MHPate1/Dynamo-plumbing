@@ -2,13 +2,16 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Link, Element } from 'react-scroll';
 import thermostatImg from '../../assets/thermostat.jpg';
+import baxiImg from '../../assets/baxi.png';
+import centralHeatingImg from '../../assets/ventralheating.png';
+import underfloorImg from '../../assets/underfloorheating.png';
 
 const services = [
   {
     title: 'BOILER INSTALL & REPAIR',
     body: 'Professional boiler installation and servicing, ensuring your home stays warm, efficient, and safe all year round.',
     cta: 'GET BOILER HELP',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+    image: baxiImg,
   },
   {
     title: 'LANDLORD GAS SAFETY CHECK / CP12',
@@ -26,7 +29,7 @@ const services = [
     title: 'CENTRAL HEATING INSTALLATION',
     body: 'Looking to install new radiators or upgrade your existing ones? Our expert heating engineers will take care of everything.',
     cta: 'GET HEATING HELP',
-    image: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80',
+    image: centralHeatingImg,
   },
   {
     title: 'NEST & HIVE THERMOSTAT',
@@ -38,7 +41,7 @@ const services = [
     title: 'UNDERFLOOR HEATING INSTALLATION',
     body: 'Upgrade your comfort with reliable underfloor heating installation, designed to keep your home cosy all year round.',
     cta: 'GET HEATING HELP',
-    image: 'https://images.unsplash.com/photo-1599619585752-c3edb42a414c?w=600&q=80',
+    image: underfloorImg,
   },
 ];
 
