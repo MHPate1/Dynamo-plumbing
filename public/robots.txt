@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dynomoplumbing.co.uk/sitemap.xml
