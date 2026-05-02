@@ -36,6 +36,8 @@ function CertCard({ cert, active }) {
         src={cert.image}
         alt={cert.name}
         loading="lazy"
+        width="120"
+        height="56"
         className="h-14 w-auto object-contain"
       />
       <div className="text-center">
@@ -193,6 +195,9 @@ export default function Certifications() {
                       <img
                         src={certs[mobileIdx].image}
                         alt={certs[mobileIdx].name}
+                        loading="lazy"
+                        width="160"
+                        height="80"
                         className="h-20 w-auto object-contain"
                       />
                       <div className="text-center">

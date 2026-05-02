@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynomo Plumbing & Heating | Boiler, Gas & Plumbing Services across the UK</title>
     <meta name="description" content="24/7 emergency plumbing, boiler installation, gas safety & heating services across the UK. Gas Safe registered. Call Dynomo Plumbing & Heating today." />
+    <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#F5C135" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; connect-src 'self';" />
 
@@ -16,22 +17,26 @@
     <meta property="og:url" content="https://dynomoplumbing.co.uk" />
     <meta property="og:title" content="Dynomo Plumbing & Heating | Boiler, Gas & Plumbing Services across the UK" />
     <meta property="og:description" content="24/7 emergency plumbing, boiler installation, gas safety & heating services across the UK. Gas Safe registered." />
-    <meta property="og:image" content="https://dynomoplumbing.co.uk/og-image.jpg" />
+    <meta property="og:image" content="/og-image.svg" />
 
     <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://dynomoplumbing.co.uk" />
     <meta property="twitter:title" content="Dynomo Plumbing & Heating | Boiler, Gas & Plumbing Services across the UK" />
     <meta property="twitter:description" content="24/7 emergency plumbing, boiler installation, gas safety & heating services across the UK." />
-    <meta property="twitter:image" content="https://dynomoplumbing.co.uk/og-image.jpg" />
+    <meta property="twitter:image" content="/og-image.svg" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://dynomoplumbing.co.uk" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+    <!-- Fonts — non-blocking to eliminate render-blocking resource -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" />
+    </noscript>
 
     <!-- JSON-LD LocalBusiness Schema -->
     <script type="application/ld+json">
