@@ -1,8 +1,8 @@
 export const CONTACT = {
-  phone:    "01228 000000",
-  phoneHref: "tel:01228000000",
-  whatsapp: "https://wa.me/447700000000",
-  email:    "info@dynomoplumbing.co.uk",
-  address:  "Carlisle, Cumbria",
-  area:     "Carlisle & surrounding areas",
+  phone:     "07758 951924",
+  phoneHref: "tel:07758951924",
+  whatsapp:  "https://wa.me/447758951924",
+  email:     "mmhp20@outlook.com",
+  address:   "Bolton, England",
+  area:      "Bolton & surrounding areas",
 }

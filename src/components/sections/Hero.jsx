@@ -40,7 +40,7 @@ export default function Hero() {
 
           {/* Sub-heading */}
           <motion.p {...fadeUp(0.2)} className="font-body text-lg md:text-xl text-gray-300 mb-10">
-            Professional Plumbing, Gas &amp; Heating in Carlisle
+            Professional Plumbing, Gas &amp; Heating in Bolton
           </motion.p>
 
           {/* CTA buttons */}

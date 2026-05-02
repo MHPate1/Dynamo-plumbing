@@ -28,7 +28,7 @@ export default function Footer() {
           <div>
             <h3 className="font-heading text-xl font-bold tracking-widest mb-2">DYNOMO</h3>
             <p className="font-body text-sm text-gray-400 leading-relaxed">
-              Plumbing &amp; Heating Services<br />Carlisle, Cumbria
+              Plumbing &amp; Heating Services<br />Bolton, England
             </p>
           </div>
 
