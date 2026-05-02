@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "PowerShell(Remove-Item \"c:\\\\Users\\\\muham\\\\OneDrive\\\\Desktop\\\\Dynamo_Plumbing\\\\Dynamo-plumbing\\\\.env.example\" -Confirm:$false)"
     ]
   }
 }
