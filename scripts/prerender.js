@@ -55,7 +55,7 @@ for (const loc of locations) {
   const url = `/${loc.slug}`;
   const canonical = `${SITE}/${loc.slug}`;
   const title = `${loc.area} Plumber & Heating Engineer | Dynomo`;
-  const description = `Premium, Gas Safe registered plumbing & heating in ${loc.area}. Boiler installation, repair & servicing, gas safety checks and central heating. Free quotes — call Dynomo today.`;
+  const description = `Gas Safe registered plumber in ${loc.area}. Boiler installation, repair & servicing, gas safety checks and central heating. Free quotes — call Dynomo.`;
   const areaSchema = JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'Service',

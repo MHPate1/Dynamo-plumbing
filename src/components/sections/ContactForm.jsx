@@ -62,8 +62,7 @@ export default function Contact() {
                 src={`${CONTACT_PHOTO}?w=900&q=75&fm=webp`}
                 srcSet={`${CONTACT_PHOTO}?w=400&q=75&fm=webp 400w, ${CONTACT_PHOTO}?w=900&q=75&fm=webp 900w`}
                 sizes="(max-width: 768px) 100vw, 50vw"
-                alt=""
-                aria-hidden="true"
+                alt="Dynomo plumbing and heating engineer at work"
                 loading="eager"
                 fetchPriority="high"
                 width="900"
