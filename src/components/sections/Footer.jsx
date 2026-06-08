@@ -1,5 +1,7 @@
 import { Link } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 import { CONTACT } from '../../constants/contact';
+import { locations } from '../../data/locations';
 
 export default function Footer() {
   return (
@@ -68,6 +70,24 @@ export default function Footer() {
               <li>{CONTACT.address}</li>
               <li className="text-xs text-gray-500 mt-2">⚡ Gas Safe Registered</li>
             </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Areas we cover */}
+      <div className="py-10 border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <h4 className="font-heading text-sm font-bold tracking-widest mb-4 text-gray-300">AREAS WE COVER</h4>
+          <div className="flex flex-wrap gap-x-5 gap-y-2">
+            {locations.map((loc) => (
+              <RouterLink
+                key={loc.slug}
+                to={`/${loc.slug}`}
+                className="font-body text-sm text-gray-400 hover:text-yellow transition-colors"
+              >
+                {loc.area}
+              </RouterLink>
+            ))}
           </div>
         </div>
       </div>

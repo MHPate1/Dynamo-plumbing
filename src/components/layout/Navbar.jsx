@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import logoImg from '../../assets/dynamo-plumbing.jpeg?w=212&format=webp&imagetools';
 
@@ -24,7 +25,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-40 bg-white transition-shadow duration-300 ${scrolled ? 'shadow-md' : 'shadow-sm'}`}>
       <div className="max-w-7xl mx-auto px-4 h-[64px] md:h-[72px] flex items-center justify-between">
         {/* Logo */}
-        <Link to="hero" smooth className="cursor-pointer flex items-center">
+        <RouterLink to="/" className="cursor-pointer flex items-center">
           <img
             src={logoImg}
             alt="Dynomo Plumbing & Heating Services"
@@ -33,7 +34,7 @@ export default function Navbar() {
             className="h-10 md:h-12 w-auto object-contain"
             fetchPriority="high"
           />
-        </Link>
+        </RouterLink>
 
         {/* Desktop nav links */}
         <div className="hidden md:flex gap-8">
