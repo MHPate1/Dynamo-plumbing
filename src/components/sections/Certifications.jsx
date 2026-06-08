@@ -54,6 +54,19 @@ const slideVariants = {
   exit:  (dir) => ({ opacity: 0, x: dir > 0 ? -60 : 60, transition: { duration: 0.25 } }),
 };
 
+function ArrowBtn({ onClick, disabled, children, label }) {
+  return (
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      className="flex-shrink-0 w-10 h-10 rounded-full border border-yellow text-yellow flex items-center justify-center hover:bg-yellow hover:text-dark transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+      aria-label={label}
+    >
+      {children}
+    </button>
+  );
+}
+
 export default function Certifications() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.15 });
 
@@ -100,17 +113,6 @@ export default function Certifications() {
   const desktopItems = certs.slice(
     desktopPage * DESKTOP_PER_PAGE,
     desktopPage * DESKTOP_PER_PAGE + DESKTOP_PER_PAGE,
-  );
-
-  const ArrowBtn = ({ onClick, disabled, children, label }) => (
-    <button
-      onClick={onClick}
-      disabled={disabled}
-      className="flex-shrink-0 w-10 h-10 rounded-full border border-yellow text-yellow flex items-center justify-center hover:bg-yellow hover:text-dark transition-all disabled:opacity-30 disabled:cursor-not-allowed"
-      aria-label={label}
-    >
-      {children}
-    </button>
   );
 
   return (

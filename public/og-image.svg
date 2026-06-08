@@ -26,7 +26,7 @@
   <text x="492" y="370" font-family="Arial, sans-serif" font-weight="400" font-size="42" fill="#F5C135" letter-spacing="6">PLUMBING &amp; HEATING</text>
 
   <!-- Sub tagline -->
-  <text x="492" y="430" font-family="Arial, sans-serif" font-weight="400" font-size="28" fill="#9ca3af" letter-spacing="4">24/7 EMERGENCY SERVICES · ACROSS THE UK</text>
+  <text x="492" y="430" font-family="Arial, sans-serif" font-weight="400" font-size="28" fill="#9ca3af" letter-spacing="4">24/7 EMERGENCY SERVICES · BOLTON</text>
 
   <!-- Gas Safe badge area -->
   <rect x="492" y="466" width="280" height="44" rx="6" fill="#F5C135" opacity="0.15"/>

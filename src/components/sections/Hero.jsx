@@ -35,12 +35,12 @@ export default function Hero() {
             {...fadeUp(0)}
             className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-none mb-5"
           >
-            24/7 EMERGENCY SERVICES
+            24/7 EMERGENCY PLUMBER IN BOLTON
           </motion.h1>
 
           {/* Sub-heading */}
           <motion.p {...fadeUp(0.2)} className="font-body text-lg md:text-xl text-gray-300 mb-10">
-            Professional Plumbing, Gas &amp; Heating in Bolton
+            Boiler Repairs, Gas Safety Checks &amp; Central Heating — Gas Safe Registered Plumbing &amp; Heating across Bolton &amp; Greater Manchester
           </motion.p>
 
           {/* CTA buttons */}
