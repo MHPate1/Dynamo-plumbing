@@ -65,7 +65,7 @@ export default function Contact() {
                 alt=""
                 aria-hidden="true"
                 loading="eager"
-                fetchpriority="high"
+                fetchPriority="high"
                 width="900"
                 height="628"
                 className="absolute inset-0 w-full h-full object-cover"

@@ -31,7 +31,7 @@ export default function Navbar() {
             width="212"
             height="70"
             className="h-10 md:h-12 w-auto object-contain"
-            fetchpriority="high"
+            fetchPriority="high"
           />
         </Link>
 
