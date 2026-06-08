@@ -9,7 +9,6 @@ import baxiCertImg   from '../../assets/baxi-cert.png?w=160&format=webp&imagetoo
 import alphaImg      from '../../assets/alpha.png?w=160&format=webp&imagetools';
 import glowwormImg   from '../../assets/glowworm.png?w=160&format=webp&imagetools';
 import idealImg      from '../../assets/idealboilers.png?w=160&format=webp&imagetools';
-import worcesterImg  from '../../assets/worcester-logo.png?w=160&format=webp&imagetools';
 
 const certs = [
   { name: 'Vaillant',        sub: 'Advance Installer',    image: vaillantImg },
@@ -18,7 +17,6 @@ const certs = [
   { name: 'Alpha',           sub: 'Approved Installer',   image: alphaImg },
   { name: 'Glow-worm',       sub: 'Approved Installer',   image: glowwormImg },
   { name: 'Ideal Boilers',   sub: 'Approved Installer',   image: idealImg },
-  { name: 'Worcester Bosch', sub: 'Accredited Installer', image: worcesterImg },
 ];
 
 const DESKTOP_PER_PAGE = 4;
@@ -126,7 +124,7 @@ export default function Certifications() {
             className="text-center mb-12"
           >
             <p className="font-body text-yellow text-xs uppercase tracking-widest mb-3">TRUSTED &amp; VERIFIED</p>
-            <h2 className="section-heading">FULLY CERTIFIED &amp; ACCREDITED</h2>
+            <h2 className="section-heading">FULLY CERTIFIED &amp; APPROVED</h2>
           </motion.div>
 
           <motion.div

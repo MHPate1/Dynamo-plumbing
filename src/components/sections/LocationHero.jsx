@@ -28,7 +28,7 @@ export default function LocationHero({ location }) {
 
         <div className="relative z-10 text-center px-4 max-w-3xl w-full">
           <motion.p {...fadeUp(0)} className="font-body text-yellow text-sm uppercase tracking-widest mb-4">
-            Gas Safe Registered · Worcester Bosch Accredited
+            Gas Safe Registered Engineers
           </motion.p>
 
           <motion.h1
@@ -40,7 +40,7 @@ export default function LocationHero({ location }) {
 
           <motion.p {...fadeUp(0.25)} className="font-body text-lg md:text-xl text-gray-300 mb-10">
             Premium boiler installation, repair &amp; central heating in {area} — clean, reliable
-            and fully guaranteed. Available 24/7 for emergencies.
+            and built to last. Available 24/7 for emergencies.
           </motion.p>
 
           <motion.div

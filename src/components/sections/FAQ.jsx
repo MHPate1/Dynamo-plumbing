@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'Which boiler brands do you install and repair?',
-    a: 'We are approved and accredited installers for all the major boiler brands, including Worcester Bosch, Vaillant, Baxi, Ideal, Alpha and Glow-worm. We can recommend and fit the right boiler for your home and budget.',
+    a: 'We install and repair all the major boiler brands, including Worcester Bosch, Vaillant, Baxi, Ideal, Alpha and Glow-worm. We can recommend and fit the right boiler for your home and budget.',
   },
   {
     q: 'Can you install a Nest or Hive smart thermostat?',

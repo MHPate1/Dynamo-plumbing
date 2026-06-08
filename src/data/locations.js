@@ -9,7 +9,7 @@ export const locations = [
     region: 'Cheshire',
     neighbours: ['Alderley Edge', 'Handforth', 'Styal'],
     blurb:
-      "Dynomo brings premium, fully-guaranteed plumbing and heating to Wilmslow and the wider Cheshire Golden Triangle. From high-efficiency boiler installations to complete central heating upgrades, our Gas Safe registered engineers deliver clean, reliable workmanship that Wilmslow homeowners trust.",
+      "Dynomo brings premium, expertly-fitted plumbing and heating to Wilmslow and the wider Cheshire Golden Triangle. From high-efficiency boiler installations to complete central heating upgrades, our Gas Safe registered engineers deliver clean, reliable workmanship that Wilmslow homeowners trust.",
   },
   {
     slug: 'plumber-alderley-edge',
@@ -17,7 +17,7 @@ export const locations = [
     region: 'Cheshire',
     neighbours: ['Wilmslow', 'Prestbury', 'Mottram St Andrew'],
     blurb:
-      "For homeowners in Alderley Edge who expect a tidy, dependable and properly accredited engineer, Dynomo handles everything from boiler swaps and heating system design to landlord gas safety certificates — all backed by manufacturer-approved guarantees.",
+      "For homeowners in Alderley Edge who expect a tidy, dependable and fully qualified engineer, Dynomo handles everything from boiler swaps and heating system design to landlord gas safety certificates — all carried out to a high standard.",
   },
   {
     slug: 'plumber-prestbury',
@@ -33,7 +33,7 @@ export const locations = [
     region: 'Trafford, Greater Manchester',
     neighbours: ['Altrincham', 'Hale Barns', 'Bowdon'],
     blurb:
-      "Serving the sought-after village of Hale, Dynomo delivers boiler installation, servicing and full heating upgrades to a standard that suits the area's finest homes. Gas Safe registered, accredited and fully guaranteed.",
+      "Serving the sought-after village of Hale, Dynomo delivers boiler installation, servicing and full heating upgrades to a standard that suits the area's finest homes. Gas Safe registered and finished to a high standard.",
   },
   {
     slug: 'plumber-hale-barns',
@@ -49,7 +49,7 @@ export const locations = [
     region: 'Trafford, Greater Manchester',
     neighbours: ['Altrincham', 'Hale', 'Dunham Massey'],
     blurb:
-      "From the period properties of Bowdon to its modern family homes, Dynomo provides reliable, accredited plumbing and heating — new boilers, system upgrades, gas safety checks and emergency call-outs, all to a premium finish.",
+      "From the period properties of Bowdon to its modern family homes, Dynomo provides reliable, professional plumbing and heating — new boilers, system upgrades, gas safety checks and emergency call-outs, all to a premium finish.",
   },
   {
     slug: 'plumber-bramhall',
@@ -57,7 +57,7 @@ export const locations = [
     region: 'Stockport, Greater Manchester',
     neighbours: ['Cheadle Hulme', 'Woodford', 'Hazel Grove'],
     blurb:
-      "Bramhall homeowners rely on Dynomo for clean, guaranteed heating work — whether it's a high-efficiency boiler installation, a central heating overhaul or a Nest thermostat fitted and set up to save energy.",
+      "Bramhall homeowners rely on Dynomo for clean, professional heating work — whether it's a high-efficiency boiler installation, a central heating overhaul or a Nest thermostat fitted and set up to save energy.",
   },
   {
     slug: 'plumber-cheadle-hulme',
@@ -65,7 +65,7 @@ export const locations = [
     region: 'Stockport, Greater Manchester',
     neighbours: ['Bramhall', 'Cheadle', 'Gatley'],
     blurb:
-      "Dynomo covers Cheadle Hulme with a full plumbing and heating service, from boiler repairs and servicing to complete system installations — carried out by Gas Safe registered engineers and backed by long manufacturer guarantees.",
+      "Dynomo covers Cheadle Hulme with a full plumbing and heating service, from boiler repairs and servicing to complete system installations — carried out by Gas Safe registered engineers to a high standard.",
   },
   {
     slug: 'plumber-worsley',
@@ -81,7 +81,7 @@ export const locations = [
     region: 'Bury, Greater Manchester',
     neighbours: ['Tottington', 'Edenfield', 'Holcombe'],
     blurb:
-      "Dynomo serves Ramsbottom and the surrounding Rossendale valley with dependable plumbing and heating — new boilers, central heating, gas safety checks and 24/7 emergency cover from local, accredited engineers.",
+      "Dynomo serves Ramsbottom and the surrounding Rossendale valley with dependable plumbing and heating — new boilers, central heating, gas safety checks and 24/7 emergency cover from local, Gas Safe registered engineers.",
   },
   {
     slug: 'plumber-lostock',
@@ -97,7 +97,7 @@ export const locations = [
     region: 'Bolton, Greater Manchester',
     neighbours: ['Lostock', 'Markland Hill', 'Smithills'],
     blurb:
-      "Dynomo provides Heaton homeowners with premium, fully-guaranteed heating work — from Worcester Bosch boiler installations to complete central heating upgrades — with the speed of a genuinely local Bolton engineer.",
+      "Dynomo provides Heaton homeowners with premium, expertly-fitted heating work — from Worcester Bosch boiler installations to complete central heating upgrades — with the speed of a genuinely local Bolton engineer.",
   },
   {
     slug: 'plumber-egerton',
@@ -105,6 +105,6 @@ export const locations = [
     region: 'Bolton, Greater Manchester',
     neighbours: ['Bromley Cross', 'Edgworth', 'Dunscar'],
     blurb:
-      "Serving Egerton and the villages north of Bolton, Dynomo delivers clean, reliable and accredited plumbing and heating — new boilers, heating systems, smart controls and emergency repairs, all backed by long guarantees.",
+      "Serving Egerton and the villages north of Bolton, Dynomo delivers clean, reliable and professional plumbing and heating — new boilers, heating systems, smart controls and emergency repairs, all to a high standard.",
   },
 ];
